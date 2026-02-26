@@ -1,0 +1,24 @@
+<View>
+   <Image name="image" value="$ocr" zoom="true" zoomControl="false"
+         rotateControl="true" width="100%" height="100%"
+         maxHeight="auto" maxWidth="auto"/>
+
+   <RectangleLabels name="bbox" toName="image" strokeWidth="1" smart="true">
+   <Label value="Text" background="green" predicted_values="text"/>
+   <Label value="Title" background="blue" predicted_values="title"/>
+   <Label value="Section-header" background="orange" predicted_values="section_header"/>
+   <Label value="Table" background="red" predicted_values="table"/>
+   <Label value="Picture" background="purple" predicted_values="picture"/>
+   <Label value="Caption" background="yellow" predicted_values="caption"/>
+   <Label value="Formula" background="cyan" predicted_values="formula"/>
+   <Label value="List-item" background="magenta" predicted_values="list_item"/>
+   <Label value="Page-header" background="grey" predicted_values="page_header"/>
+   <Label value="Page-footer" background="grey" predicted_values="page_footer"/>
+   <Label value="Footnote" background="brown" predicted_values="footnote"/>
+</RectangleLabels>
+
+   <TextArea name="transcription" toName="image"
+   editable="true" perRegion="true" required="false"
+   maxSubmissions="1" rows="5" placeholder="Recognized Text"
+   displayMode="region-list"/>
+</View>
