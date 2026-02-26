@@ -1,0 +1,4 @@
+  usuario:
+alumno@gmail.com
+  contraseña:
+labelstudio2026
