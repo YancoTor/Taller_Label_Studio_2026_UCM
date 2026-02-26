@@ -6,3 +6,9 @@ https://edatos.consorciomadrono.es/dataset.xhtml?persistentId=doi:10.21950/VUPNH
 
   Ejemplo 2 guía anotación
 https://edatos.consorciomadrono.es/dataset.xhtml?persistentId=doi:10.21950/ZF4PKF
+
+  Descargar docker:
+https://docs.docker.com/desktop/setup/install/windows-install/
+
+  Descargar git:
+https://git-scm.com/install/windows
