@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  tesseract:
+    container_name: tesseract
+    image: heartexlabs/label-studio-ml-backend:tesseract-master
+    init: true
+    build:
+      context: .
+    ports:
+      - 9090:9090
+    volumes:
+      - "./data/server:/data"
+    env_file:
+      - .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
