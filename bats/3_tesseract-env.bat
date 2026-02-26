@@ -2,6 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: 1. Definimos las rutas absolutas basadas en el usuario
+:: La carpeta final será tesseract o tesseract_and_yolo, según estemos usando o no también yolo para layout
 set "DEST_BACKEND=%USERPROFILE%\label-studio-ml-backend\label_studio_ml\examples\tesseract"
 set "DATA_FOLDER=%USERPROFILE%\mydata"
 
@@ -54,4 +55,5 @@ echo  %DEST_BACKEND%
 echo  Y ejecutar: docker compose up -d
 echo --------------------------------------------------
 echo.
+
 pause
