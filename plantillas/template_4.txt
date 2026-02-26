@@ -1,0 +1,14 @@
+<View>
+  <Image name="image" value="$ocr" zoom="true" rotateControl="true"/>
+
+  <PolygonLabels name="polygon" toName="image" strokeWidth="1">
+    <Label value="Text" background="#2ecc71"/>
+  </PolygonLabels>
+
+  <TextArea name="transcription" toName="image" 
+            editable="true" perRegion="true" 
+            displayMode="region-list"
+            rows="5" 
+            autoSize="true"
+            placeholder="Escribe la transcripción aquí..."/>
+</View>
