@@ -1,5 +1,7 @@
 @echo off
 set "TESS_PATH=%USERPROFILE%\label-studio-ml-backend\label_studio_ml\examples\tesseract"
+:: Tenemos dos versiones, si estamos usando también la versión con yolo, la carpeta final no es tesseract, sino tesseract_and_yolo
+:: El resto debería ser lo mismo, porque tienen la misma lógica
 
 echo ==================================================
 echo      LANZADOR DE BACKEND: TESSERACT OCR
@@ -50,4 +52,5 @@ echo --------------------------------------------------
 echo EL PROCESO NO PUDO INICIAR. Revisa los errores arriba.
 echo --------------------------------------------------
 :final
+
 pause
