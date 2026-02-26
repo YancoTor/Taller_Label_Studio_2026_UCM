@@ -1,0 +1,7 @@
+  Para vosotros desde vuestro propio ordenador (sin máquina virtual)
+http://host.docker.internal:9090
+
+  Para nuestra sesión en la UCM (con máquina virtual)
+http://tesseract-yolo:9090
+
+/label-studio/data/media/upload
